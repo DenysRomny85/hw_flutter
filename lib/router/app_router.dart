@@ -5,6 +5,7 @@ import 'package:hw_flutter/lesson_13/homework_13_screen.dart';
 import 'package:hw_flutter/lesson_18/homework_bloc/homework_bloc_screen.dart';
 import 'package:hw_flutter/lesson_18/homework_cubit/homework_cubit_screen.dart';
 import 'package:hw_flutter/lesson_18/state_managment_base_screen.dart';
+import 'package:hw_flutter/lesson_19/screens/rate_app_screen.dart';
 import 'package:hw_flutter/screens/home_screen.dart';
 
 // GoRouter configuration
@@ -40,6 +41,10 @@ final appRouter = GoRouter(
               builder: (context, state) => CounterAppBloc(),
             ),
           ],
+        ),
+        GoRoute(
+          path: 'hw19',
+          builder: (context, state) => RateAppScreen(),
         ),
       ],
     ),

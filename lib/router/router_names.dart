@@ -5,4 +5,5 @@ abstract class RouterNames {
   static const String hw18 = '/hw18';
   static const String cubitExample = '/hw18/cubitExample';
   static const String blocExample = '/hw18/blocExample';
+  static const String hw19 = '/hw19';
 }
