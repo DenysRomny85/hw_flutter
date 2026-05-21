@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hw_flutter/router/router_names.dart';
+import 'package:hw_flutter/widgets/feature_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -31,48 +32,12 @@ class HomeScreen extends StatelessWidget {
               title: 'HW 13',
               onTap: () => context.go(RouterNames.hw13),
             ),
+            const SizedBox(height: 12),
+            FeatureCard(
+              title: 'HW 18',
+              onTap: () => context.go(RouterNames.hw18),
+            ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class FeatureCard extends StatelessWidget {
-  const FeatureCard({
-    required this.title,
-    required this.onTap,
-    super.key,
-  });
-
-  final String title;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 2,
-      child: InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              Icon(
-                Icons.arrow_forward_ios,
-                size: 16,
-                color: Colors.grey.shade600,
-              ),
-            ],
-          ),
         ),
       ),
     );
