@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hw_flutter/lesson_18/homework_bloc/bloc/counter_bloc.dart';
 import 'package:hw_flutter/lesson_18/homework_cubit/cubit/counter_cubit.dart';
+import 'package:hw_flutter/lesson_19/bloc/rate_app_cubit.dart';
 import 'package:hw_flutter/router/app_router.dart';
 
 void main() {
@@ -20,6 +21,9 @@ class FlutterWidgetsApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => CounterBloc(),
+        ),
+        BlocProvider(
+          create: (context) => RateAppCubit(),
         ),
       ],
       child: MaterialApp.router(
