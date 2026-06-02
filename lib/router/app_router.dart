@@ -7,6 +7,7 @@ import 'package:hw_flutter/lesson_18/homework_cubit/homework_cubit_screen.dart';
 import 'package:hw_flutter/lesson_18/state_managment_base_screen.dart';
 import 'package:hw_flutter/lesson_19/screens/rate_app_screen.dart';
 import 'package:hw_flutter/lesson_21/homework_21_screen.dart';
+import 'package:hw_flutter/lesson_22/error_handling_homework/presentation/ui/screens/user_profile_homework_screen.dart';
 import 'package:hw_flutter/screens/home_screen.dart';
 
 // GoRouter configuration
@@ -50,6 +51,10 @@ final appRouter = GoRouter(
         GoRoute(
           path: 'hw21',
           builder: (context, state) => AnimatedBallScreen(),
+        ),
+        GoRoute(
+          path: 'hw22',
+          builder: (context, state) => UserProfileHomeworkScreen(),
         ),
       ],
     ),

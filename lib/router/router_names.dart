@@ -7,4 +7,5 @@ abstract class RouterNames {
   static const String blocExample = '/hw18/blocExample';
   static const String hw19 = '/hw19';
   static const String hw21 = '/hw21';
+  static const String hw22 = '/hw22';
 }
