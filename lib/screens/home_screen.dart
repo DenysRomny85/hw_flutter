@@ -87,6 +87,11 @@ class HomeScreen extends StatelessWidget {
                 }
               },
             ),
+            const SizedBox(height: 12),
+            FeatureCard(
+              title: 'HW 21',
+              onTap: () => context.go(RouterNames.hw21),
+            ),
           ],
         ),
       ),
