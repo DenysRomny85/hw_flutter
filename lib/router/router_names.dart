@@ -8,4 +8,5 @@ abstract class RouterNames {
   static const String hw19 = '/hw19';
   static const String hw21 = '/hw21';
   static const String hw22 = '/hw22';
+  static const String hw25 = '/hw25';
 }
